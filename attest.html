@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Веселова Ксения Олеговна ПИ-С-19</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav>
+        <div class="row">
+            <div class="col-2"><a href="index.html"><img src="img/logo.png" class="logo" alt="logo_image"/></a></div>
+            <div class="col-2"><span class="headS">Обучаемся CSS</span></div>
+        </div>    
+        <div class="row">
+            <div class="col-3"><a href="index.html" class="navA">| О себе</a></div>
+            <div class="col-3"><a href="resume.html" class="navA">| Резюме</a></div>
+            <div class="col-3"><a href="attest.html" class="navA">| Запись на аттестацию</a></div>
+        </div>
+    </nav>
+    <article>
+        <h2>Запись на аттестацию</h2>
+        <hr>
+        <span class="nad">Фамилия:</span><br>
+        <input type="text" id="fname" placeholder="Введите фамилию"><br>
+        <span class="nad">Имя:</span><br>
+        <input type="text" id="lname" placeholder="Введите имя"><br>
+        <br><br>
+        <span class="nad">Логин:</span><br>
+        <input type="text" id="login" placeholder="Введите логин"><br>
+        <span class="nad">Пароль:</span><br>
+        <input type="password" id="pass" placeholder="Введите пароль"><br>
+        <br><br>
+        <span class="nad">Выберите время:</span><br>
+        <p><input name="timeR" type="radio" value="9:00-10:00">9:00-10:00</p>
+        <p><input name="timeR" type="radio" value="11:00-12:00">11:00-12:00</p>
+        <p><input name="timeR" type="radio" value="14:00-15:00">14:00-15:00</p>
+        <p><input name="timeR" type="radio" value="16:00-17:00">16:00-17:00</p>
+        <br>  
+        <span class="nad">Выберите форму контроля:</span><br>
+        <p><input type="checkbox" name="fcontrol" value="Онлайн экзамен" />Онлайн экзамен</p>
+        <p><input type="checkbox" name="fcontrol" value="Доклад" />Доклад</p>
+        <p><input type="checkbox" name="fcontrol" value="Реферат" />Реферат</p>
+        <p><input type="checkbox" name="fcontrol" value="Экзамен" />Экзамен</p>
+        <br>
+        <span class="nad">Выберите предмет:</span><br>
+        <select id="subject" name="subject">
+            <option value="Русский" selected>Русский</option>
+            <option value="Информатика">Информатика</option>
+            <option value="История">История</option>
+            <option value="ИЗО">ИЗО</option>
+        <select>    
+        <br><br>
+        <span class="nad">Проверить данные - </span><input type="button" value="Проверить" onclick="setData()" />
+        <br><br>
+        <span class="nad">Дополнительная информация:</span>
+            <br>
+        <textarea name="infoT" id="infoT" rows="8" cols="30"></textarea>
+    </article>
+    <footer>
+        <div class="row">
+            <div class="col-2">Cайт разработан Веселовой Ксенией, Copyright © 2023</div>   
+            <div class="col-2">                
+                <img src="img/vk.png" />
+                <img src="img/ok.png" />
+                <img src="img/tele.png" />
+            </div>                 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
